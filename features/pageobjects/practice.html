@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = "en">
+<p>hi</p>
+<script>
+    async function myCode() {
+        const p = document.getElementById("code");
+        const num = [1,2,4];
+        const obj1 = {
+        color: "red",
+        name: "4"
+         };
+        const obj2 = {
+        color: "blue",
+        name: 5
+        };
+        //const isEqual = num[2] === obj.name;
+        const arrobj = [obj1, obj2];
+        const myObj = {
+        a:5,
+        b:"saDIA",
+        C:[6,7,8,"hI"],
+        d:[
+            { 
+                array1: ["p2ap +4a", 100],
+                array2: ["mamma", 200]
+            },
+            {
+                array3:[34, "nil"]
+            },
+            500,
+            "my one"
+        ]
+        };
+        var text = myObj.d[0].array1[0];
+        p.innerHTML = text.split(' ').at(-1);
+        console.log(text.replace(/^\d+$/g, ''));
+    }
+    function tryCons( age, name) {
+        this.age = age;
+        this.name = name;
+    }
+   async  function objectTest () {
+
+        return myObj;
+    }
+    var obj = new tryCons(4, "afia");
+    //console.log(obj);
+
+window.onload = myCode;
+</script>
+<p id="code"></p>
+</html>
